@@ -55,3 +55,7 @@ const clearBtn = document.getElementById('clearHistory').addEventListener('click
 })
 let formattedDate = new Date().toDateString('en-US');
 document.getElementById('date').innerText=formattedDate;
+
+document.getElementById('discover').addEventListener('click',function(){
+    window.location.href='./index2.html';
+})
