@@ -3,10 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>assingment-5</title>
+    <title>assignments-5</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/986c07a8cf.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header></header>
+<body class="max-w-[1818px] mx-auto bg-[#f4f7ff]">
+    <header>
+        <nav class="pt-6">
+            <div class="navbar bg-base-100 shadow-sm w-[1536px] mx-auto rounded-2xl">
+                <div class="flex-1">
+                  <div class="flex gap-3 justify-start items-center m-6">
+                    <img src="assets/logo.png" alt="">
+                    <a class="text-4xl font-light">Dev<span class="font-bold">Board</span></a>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3 mr-6">
+                  <div class="dropdown dropdown-end">
+                   <div class="flex items-center justify-center w-[123px] h-16 rounded-full gap-2 bg-[#f4f7ff]">
+                    <i class="fa-solid fa-square-check text-3xl text-[#3752FD]"></i>
+                    <h2 id="nav-num" class="text-3xl font-bold">23</h2>
+                   </div>
+                  </div>
+                  <div class="dropdown dropdown-end">
+                    <button id="bg-change-color">
+                      <div class="p-3 bg-[#f4f7ff] rounded-full">
+                        <img
+                          alt="Tailwind CSS Navbar component"
+                          src="assets/theme-btn.png" />
+                      </div>
+                    </button>
+                  </div>
+                </div>
+            </div>
+        </nav>
+    </header>
     <main></main>
 </body>
 </html>
