@@ -10,6 +10,7 @@ const taskNum = document.getElementById('task-num').innerText;
 const navNumber =document.getElementById('nav-num').innerText;
 let convertTaskNum= parseInt(taskNum);
 let convertNabNum =parseInt(navNumber);
+let count=0;
 
 for(const btn of buttons){
     btn.addEventListener('click', function(){
@@ -27,18 +28,19 @@ for(const disables of buttons){
         completeTask.innerHTML = `You have Completed The Task ${title} at ${time}`;
         cardContainer.appendChild(completeTask);
         disables.disabled = true;
+        count++
+        if(count == 6){
+            alert('congratulations');
+        }
 
     })
+    
 }
 for(const taskNumbers of buttons){
     taskNumbers.addEventListener('click', function(){
         // const sum = convertTaskNum + btns;
         convertTaskNum--;
         document.getElementById('task-num').innerText = convertTaskNum;
-        if(convertNabNum==0){
-            alert('congratulations');
-        }
-   
     })
 }
 for(const taskNumber of buttons){
