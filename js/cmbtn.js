@@ -24,13 +24,13 @@ for(const disables of buttons){
         let time = new Date().toLocaleTimeString('en-US');
         let cardContainer = document.getElementById('card-container');
         let completeTask = document.createElement('div');
-        completeTask.className = "m-5 p-3 rounded-lg bg-[#f4f7ff]";
+        completeTask.className = "m-5 p-3 rounded-lg bg-[#f4f7ff] text-xl font-medium";
         completeTask.innerHTML = `You have Completed The Task ${title} at ${time}`;
         cardContainer.appendChild(completeTask);
         disables.disabled = true;
         count++
         if(count == 6){
-            alert('congratulations');
+            alert('congrates!!! You have completed all the carrent task');
         }
 
     })
